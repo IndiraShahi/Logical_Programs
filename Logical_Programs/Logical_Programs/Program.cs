@@ -23,12 +23,17 @@ namespace Logical_Programs
                     break;
                 case 2:
                     Perfect perfect = new Perfect();
-                    perfect.PerfectNumber(8128);
+                    perfect.PerfectNumber(1);
                     break;
                 case 3:
                     Prime prime = new Prime();
                     prime.PrimeNumber(7);
                     break;
+                case 4:
+                    Reverse reverse = new Reverse();
+                    reverse.ReverseNumber(73);
+                    break;
+
                 default:
                     Console.WriteLine("Invalid, Please choose number from 1 to 4");
                     Program.Main();
