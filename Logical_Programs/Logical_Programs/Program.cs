@@ -25,6 +25,10 @@ namespace Logical_Programs
                     Perfect perfect = new Perfect();
                     perfect.PerfectNumber(8128);
                     break;
+                case 3:
+                    Prime prime = new Prime();
+                    prime.PrimeNumber(7);
+                    break;
                 default:
                     Console.WriteLine("Invalid, Please choose number from 1 to 4");
                     Program.Main();
