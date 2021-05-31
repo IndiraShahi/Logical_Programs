@@ -4,7 +4,7 @@ namespace Logical_Programs
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Lets do some logical programs");
             Console.WriteLine("1.Fibonacci Series");
@@ -20,6 +20,14 @@ namespace Logical_Programs
                 case 1:
                     Fibonacci fibonacci = new Fibonacci();
                      fibonacci.Fibonacci1();
+                    break;
+                case 2:
+                    Perfect perfect = new Perfect();
+                    perfect.PerfectNumber(8128);
+                    break;
+                default:
+                    Console.WriteLine("Invalid, Please choose number from 1 to 4");
+                    Program.Main();
                     break;
             }
         }
